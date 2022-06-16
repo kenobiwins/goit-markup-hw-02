@@ -1,13 +1,219 @@
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+:root {
+  --background-color: #e5e5e5;
+  --background-second-color: #2f303a;
+  --background-white: #ffffff;
+  --background-section: #f5f4fa;
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+}
+/* base */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--title-text-color);
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden=;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+ul {
+  list-style: none;
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+/* header */
+/* .header li {
+    display: inline-block;} */
+
+.header {
+  background-color: var(--background-white);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+}
+.nav {
+}
+.contact {
+  color: var(--primary-text-color);
+
+  text-decoration: none;
+  font-style: normal;
+}
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+
+  cursor: pointer;
+}
+
+/* logo */
+.logo {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  color: #2196f3;
+}
+.alt-color-logo {
+  color: var(--background-white);
+}
+.second-color-logo {
+  color: var(--title-text-color);
+}
+/* hero */
+.hero-title {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--background-white);
+}
+.hero-section {
+  /* position: absolute; */
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background-color: var(--background-second-color);
+}
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  position: absolute;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color);
+  color: var(--background-white);
+  cursor: pointer;
+}
+/* .hero-button:active {
+    color: aquamarine;
+} */
+
+/* main page */
+.title-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: var(--primary-text-color);
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  text-align: center;
+}
+
+.section-team {
+  background-color: var(--background-section);
+}
+
+.card {
+  background-color: var(--background-white);
+  width: 270px;
+  height: 368px;
+  left: 815px;
+  top: 1635px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+}
+/* button */
+.button{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  align-items: center;
+  border-radius: 4px;
+  color: var(--title-text-color);
+  background-color: var(--background-section);
+}
+
+.button:hover,
+.button:focus{
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    align-items: center;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+color: var(--background-white);
+  background-color: var(--accent-color);
+
+cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden=;
+}
+
+/* footer */
+.footer {
+  background-color: var(--background-second-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.address-contact {
+  color: var(--background-white);
+  font-style: normal;
+}
+
+.contact-footer {
+  color: rgba(255, 255, 255, 0.6);
 }
